@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../commonlib/common/common.iml" filepath="$PROJECT_DIR$/../commonlib/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../commonlib/commonlib.iml" filepath="$PROJECT_DIR$/../commonlib/commonlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convert/convert.iml" filepath="$PROJECT_DIR$/convert/convert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fatidog.iml" filepath="$PROJECT_DIR$/fatidog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map/map.iml" filepath="$PROJECT_DIR$/map/map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serialcom/serialcom.iml" filepath="$PROJECT_DIR$/serialcom/serialcom.iml" />
+    </modules>
+  </component>
+</project>

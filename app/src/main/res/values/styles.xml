@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="Z3BaseTheme" parent="android:Theme">
+        <item name="android:windowFullscreen">true</item> <!-- 是否隐藏状态栏 -->
+        <item name="android:windowActionBar">false</item> <!-- 是否显示ActionBar栏 -->
+        <item name="android:windowNoTitle">true</item> <!-- 是否隐藏标题栏 -->
+        <item name="android:windowAnimationStyle">@style/ActivityNoAnim</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="FatiDogBaseTheme" parent="android:Theme">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowActionBar">false
+        </item> <!--true 标题栏不使用状态栏空间， false 标题栏占用状态栏空间，处于状态栏底部-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/ActivityNoAnim</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="button_vehicle_keyboard_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">40.666dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/custom_title_bg</item>
+    </style>
+
+    <style name="FullScreenDialogStyle">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="InputFaceNameDialogStyle" parent="android:style/Theme.Dialog">
+        <!--  <item name="android:windowFrame">@null</item>
+          <item name="android:windowIsTranslucent">true</item>-->        <!--背景颜色及透明程度-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+</resources>

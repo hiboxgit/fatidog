@@ -1,0 +1,3 @@
+include ':app', ':commonlib', ':serialcom', ':convert', ':map'
+project(':commonlib').projectDir = new File('../commonlib/')
+include ':commonlib:common'

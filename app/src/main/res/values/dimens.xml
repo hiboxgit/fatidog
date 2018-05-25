@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="window_side_bar_width">63dp</dimen>
+    <dimen name="window_status_bar_height">30dp</dimen>
+
+    <!--开关文字和按钮之间的间隙-->
+    <dimen name="switch_text_space">24dp</dimen>
+    <!--不同开关上下之间的空间-->
+    <dimen name="switch_line_between_space">34dp</dimen>
+    <!--左侧开关控制栏与中间刷脸动画之间的间隙-->
+    <dimen name="switch_anim_between_space">70dp</dimen>
+    <!--中间刷脸动画距离顶部的距离-->
+    <dimen name="anim_to_top_space">27dp</dimen>
+
+    <!--连接标志距离右边缘的空间-->
+    <dimen name="connect_flag_to_right_space">110dp</dimen>
+    <dimen name="connect_flag_to_top_space">84dp</dimen>
+    <dimen name="connect_flag_to_text_space">16dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="font_size_l">15sp</dimen>
+    <dimen name="font_size_m">19sp</dimen>
+</resources>

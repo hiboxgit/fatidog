@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.jakewharton.hugo'
+
+Properties props = new Properties()
+if (project.hasProperty("dudu.properties")
+        && new File(project.property("dudu.properties")).exists()) {
+    props.load(new FileInputStream(file(project.property("dudu.properties"))))
+}
+
+android {
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias props['key.alias']
+            keyPassword props['key.password']
+            storeFile file(props['keystore'])
+            storePassword props['keystore.password']
+        }
+        debug {
+            keyAlias props['key.alias']
+            keyPassword props['key.password']
+            storeFile file(props['keystore'])
+            storePassword props['keystore.password']
+        }
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.dudu.fatidog"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+//        jackOptions {
+//            enabled true
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            debuggable false
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    getApplicationVariants().all { variant ->
+        variant.outputs.each { output ->
+            def date=new Date();
+            def formattedDate=date.format('yyyyMMdd')
+            output.outputFile = new File(output.outputFile.parent,
+                    "FatiDog_${variant.flavorName}_${formattedDate}.apk")
+        }
+    }
+
+    productFlavors {
+        z3 {
+            applicationId = "com.dudu.fatidog"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:'
+    compile project(':commonlib:common')
+    compile project(':serialcom')
+    compile project(':convert')
+    compile project(':map')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+}

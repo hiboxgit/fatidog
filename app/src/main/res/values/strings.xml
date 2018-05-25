@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">FatiDog</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <!-- 疲劳预警 -->
+    <string name="fati_dog">疲劳预警</string>
+    <string name="boot_start">开机启动</string>
+    <string name="experience_mode">体验模式</string>
+
+    <string name="correct_face_position_tip">请微调机器，让人脸正对摄像头哦</string>
+    <string name="device_connect_ok_tip">设备连接成功!</string>
+    <string name="device_connect_fail_tip">设备连接失败!</string>
+
+    <string name="click_to_face">点击刷脸</string>
+    <string name="refresh_face">重新刷脸</string>
+    <string name="face_scan_ok">刷脸成功</string>
+    <string name="face_scan_fail">刷脸失败</string>
+
+    <string name="car_is_running_cannot_switch">汽车行驶中，无法切换体验模式</string>
+    <string name="please_be_careful">请小心驾驶</string>
+    <string name="please_look_forward">请正视前方</string>
+    <string name="drive_danger">危险</string>
+    <string name="drive_tired">疲劳驾驶</string>
+
+    <string name="please_open_fati_dog">刷脸请先打开疲劳预警开关</string>
+    <string name="edit_name">编辑名称</string>
+    <string name="please_input_face_name">请输入人脸的名字</string>
+
+    <string name="face_right_register_success">正脸采集成功</string>
+    <string name="face_side_register_success">侧脸采集成功</string>
+    <string name="face_right_register_fail">正脸采集失败,请重试</string>
+    <string name="face_side_register_fail">侧脸采集失败,请重试</string>
+    <string name="setting_ok_has_saved_face">已为您保存本次人脸信息</string>
+
+    <string name="please_right_to_camera">请正对车内摄像头</string>
+    <string name="please_side_to_camera">请侧对车内摄像头</string>
+
+    <string name="please_right_face_to_camera">人脸采集开始,请正对车内摄像头</string>
+    <string name="please_drive_face_to_camera">请驾驶姿势侧对车内摄像头</string>
+    <string name="right_face_ok">正脸采集成功</string>
+    <string name="side_face_ok">侧脸采集成功</string>
+
+    <string name="reg_person_is_full">人员注册已满3个,请先删除</string>
+    <string name="notice_stranger">注意！陌生人在使用车辆！</string>
+    <string name="right_driver">驾驶员认证识别通过</string>
+    <string name="unregister_face">人脸库为空，请添加一条人脸数据到人脸库中</string>
+    <string name="reg_face_need_open_fatidog">添加人脸请先打开疲劳预警开关</string>
+
+    <string name="unsupport_func">当前功能不支持</string>
+    <string name="right_driver_welcome">欢迎使用芝麻云镜！</string>
+
+    <string name="fatidog_not_connected">防疲劳模块未连接</string>
+    <string name="face_recog_connected">人脸识别模块未连接</string>
+
+    <string name="fatidog_has_opened">疲劳预警已打开</string>
+    <string name="fatidog_has_closed">疲劳预警已关闭</string>
+    <string name="recog_has_opened">人脸识别已打开</string>
+    <string name="recog_has_closed">人脸识别已关闭</string>
+
+    <string name="fatidog_has_power_on">恢复防疲劳功能</string>
+    <string name="fatidog_has_power_off">强制关闭防疲劳</string>
+
+    <string name="click_sure">确定</string>
+</resources>
